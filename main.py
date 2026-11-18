@@ -166,7 +166,7 @@ def search_all_pages(query):
 
 if __name__ == "__main__":
   print(copyright_notice)
-  input("\n======\n\nHit enter to continue and to confirm that you have read the copyright notice for this program. ")
+ print("\n======\n")
   print("\n======\n")
 
   if len(sys.argv) < 2:
