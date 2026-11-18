@@ -163,23 +163,8 @@ def search_all_pages(query):
     found_keys += keys
 
   return valid_keys
-
 if __name__ == "__main__":
   print(copyright_notice)
- print("\n======\n")
   print("\n======\n")
 
-  if len(sys.argv) < 2:
-    raise IndexError("Cookie not provided. Pass in your cookie as the next argument. Like 'python3 main.py \"cookie_here\"'")
-  cookie = sys.argv[1]
-  graphql_headers["Cookie"] = cookie
-
-  if len(sys.argv) > 2:
-    query = sys.argv[2]
-  else:
-    query = "sk- openai"
-    print("Warning: search query not provided, falling back to hard coded default")
-
-  print(f"Searching with query: {query}")
-  all_keys = search_all_pages(query)
-  print("Search complete. Check found_keys.csv for results.")
+  print("Starting repository security audit...")
